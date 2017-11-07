@@ -43,6 +43,7 @@ class Kelola_obat extends CI_Controller {
 	{
 		$data = [
 			'obat_nama' 		=> $this->input->post('obat_nama'),
+			'pengertian' 		=> $this->input->post('pengertian'),
 			'indikasi' 			=> $this->input->post('indikasi'),
 			'kontradiksi' 	=> $this->input->post('kontradiksi'),
 			'efek_samping' 	=> $this->input->post('efek_samping'),
@@ -55,6 +56,21 @@ class Kelola_obat extends CI_Controller {
 		$alert	= "<script>alert('Data Berhasil Disimpan!')</script>";
 		$this->session->set_flashdata("pesan", $alert);
 		redirect('Kelola_obat');
+	}
+
+	public function detail_obat($id)
+	{
+		$id = $this->uri->segment('3');
+		$data = [
+			'title' 				=> 'Detail Obat',
+			'titlebox' 			=> 'Detail Obat',
+			'breadcrumb01' 	=> 'Kelola Obat',
+			'breadcrumb02' 	=> 	anchor('kelola_obat/detail_obat/'.$id, 'Detail Obat'),
+			'obat' => $this->m_obat->show($id),
+			'konten' => 'obat/v_detail_obat',
+		];
+
+		$this->load->view('template_admin', $data);
 	}
 
 	public function edit_obat($id)
@@ -76,6 +92,7 @@ class Kelola_obat extends CI_Controller {
 	{
 		$data = [
 			'obat_nama' 		=> $this->input->post('obat_nama'),
+			'pengertian' 		=> $this->input->post('pengertian'),
 			'indikasi' 			=> $this->input->post('indikasi'),
 			'kontradiksi' 	=> $this->input->post('kontradiksi'),
 			'efek_samping' 	=> $this->input->post('efek_samping'),

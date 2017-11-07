@@ -32,10 +32,9 @@
                     <input type="text" class="form-control" value="<?php echo $obat->kemasan;?>" name="kemasan" placeholder="Kemasan Obat">
                   </div>
                   <div class="form-group">
-                    <label for="dosis">Dosis</label>
-                    <textarea class="form-control ckeditor" name="dosis"><?php echo $obat->dosis;?></textarea>
+                    <label for="dosis">Pengertian</label>
+                    <textarea class="form-control ckeditor" name="pengertian"><?php echo $obat->pengertian;?></textarea>
                   </div>
-
                 </div><!-- /.box-body -->
             </div><!-- /.box -->
           </div><!--/.col (left) -->
@@ -48,6 +47,10 @@
               <!-- form start -->
                 <div class="box-body">
                   <div class="form-group">
+                    <label for="dosis">Dosis</label>
+                    <textarea class="form-control ckeditor" name="dosis"><?php echo $obat->dosis;?></textarea>
+                  </div>
+                  <div class="form-group">
                     <label for="indikasi">Indikasi</label>
                     <textarea class="form-control ckeditor" name="indikasi"><?php echo $obat->indikasi;?></textarea>
                   </div>
@@ -56,8 +59,6 @@
                     <textarea class="form-control ckeditor" name="kontradiksi"><?php echo $obat->kontradiksi;?></textarea>
                   </div>
                 </div><!-- /.box-body -->
-                <div class="box-footer">
-                </div>
             </div><!-- /.box -->
           </div><!--/.col (left) -->
           <div class="col-md-4">

@@ -32,8 +32,8 @@
                     <input type="text" class="form-control" name="kemasan" placeholder="Kemasan Obat">
                   </div>
                   <div class="form-group">
-                    <label for="dosis">Dosis</label>
-                    <textarea class="form-control ckeditor" name="dosis"></textarea>
+                    <label for="dosis">Pengertian</label>
+                    <textarea class="form-control ckeditor" name="pengertian"></textarea>
                   </div>
                 </div><!-- /.box-body -->
             </div><!-- /.box -->
@@ -47,6 +47,10 @@
               <!-- form start -->
                 <div class="box-body">
                   <div class="form-group">
+                    <label for="dosis">Dosis</label>
+                    <textarea class="form-control ckeditor" name="dosis"></textarea>
+                  </div>
+                  <div class="form-group">
                     <label for="indikasi">Indikasi</label>
                     <textarea class="form-control ckeditor" name="indikasi"></textarea>
                   </div>
@@ -55,8 +59,7 @@
                     <textarea class="form-control ckeditor" name="kontradiksi"></textarea>
                   </div>
                 </div><!-- /.box-body -->
-                <div class="box-footer">
-                </div>
+                
             </div><!-- /.box -->
           </div><!--/.col (left) -->
           <div class="col-md-4">
