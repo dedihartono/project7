@@ -30,7 +30,7 @@
     </a>
   </li>
   <li class="treeview">
-    <li><a href="<?php echo base_url();?>obat"><i class="fa fa-circle-o"></i> Kelola Obat</a></li>
+    <li><a href="<?php echo base_url();?>kelola_obat"><i class="fa fa-circle-o"></i> Kelola Obat</a></li>
   </li>
 <?php } ; ?>
 </ul>

@@ -35,6 +35,9 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/daterangepicker/daterangepicker-bs3.css">
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="<?php echo base_url();?>assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/datatables/dataTables.bootstrap.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/datatables/extensions/ColVis/css/dataTables.colVis.min.css')?>">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -107,6 +110,14 @@
     <!--
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     -->
+    <!--LOAD LIBRARY FOR THIS PAGE-->
+<!--DataTables-->
+
+    <script src="<?php echo base_url('assets/plugins/datatables/jquery.dataTables.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/plugins/datatables/dataTables.bootstrap.min.js')?>"></script>
+
+    <script src="<?php echo base_url('assets/plugins/datatables/extensions/ColVis/js/dataTables.colVis.min.js')?>"></script>
+
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <!-- Bootstrap 3.3.5 -->
     <script src="<?php echo base_url();?>assets/bootstrap/js/bootstrap.min.js"></script>
@@ -141,6 +152,8 @@
 
     <!-- AdminLTE for demo purposes -->
     <script src="<?php echo base_url();?>assets/dist/js/demo.js"></script>
+    <script src="<?php echo base_url();?>assets/plugins/ckeditor-basic/ckeditor.js"></script>
+    <script src="<?php echo base_url();?>assets/plugins/ckeditor-basic/styles.js"></script>
     <script type="text/javascript">
       //datepicker
       $('.datepicker').datepicker({
@@ -152,6 +165,18 @@
           todayHighlight: true,
           language:"id",
       });
+
+      function hapus() {
+
+        var conf=confirm("Apakah data ini ingin dihapus ?");
+
+          if (conf==true) {
+            return true;
+          } else {
+            return false;
+          }
+
+      }
     </script>
     <?php echo $this->session->flashdata('pesan');?>
   </body>
