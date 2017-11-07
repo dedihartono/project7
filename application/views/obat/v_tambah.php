@@ -35,7 +35,6 @@
                     <label for="dosis">Dosis</label>
                     <textarea class="form-control ckeditor" name="dosis"></textarea>
                   </div>
-
                 </div><!-- /.box-body -->
             </div><!-- /.box -->
           </div><!--/.col (left) -->
@@ -82,6 +81,7 @@
                   </div>
                 </div><!-- /.box-body -->
                 <div class="box-footer">
+                  <a class="btn btn-default" href="<?php echo base_url();?>kelola_obat">Batal</a>
                   <button type="submit" class="btn btn-primary">Simpan</button>
                 </div>
               </form>

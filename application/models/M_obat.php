@@ -18,7 +18,7 @@ class M_obat extends CI_Model {
 
 	public function show($id)
 	{
-		$this->db->where($this->key);
+		$this->db->where($this->key, $id);
 		$data = $this->db->get($this->table);
 		return $data->row();
 	}

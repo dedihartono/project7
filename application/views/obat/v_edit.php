@@ -25,15 +25,15 @@
                 <div class="box-body">
                   <div class="form-group">
                     <label for="obat_nama">Nama Obat</label>
-                    <input type="text" class="form-control" name="obat_nama" placeholder="Nama Obat">
+                    <input type="text" class="form-control" value="<?php echo $obat->obat_nama;?>" name="obat_nama" placeholder="Nama Obat">
                   </div>
                   <div class="form-group">
                     <label for="obat_nama">Kemasan</label>
-                    <input type="text" class="form-control" name="kemasan" placeholder="Kemasan Obat">
+                    <input type="text" class="form-control" value="<?php echo $obat->kemasan;?>" name="kemasan" placeholder="Kemasan Obat">
                   </div>
                   <div class="form-group">
                     <label for="dosis">Dosis</label>
-                    <textarea class="form-control ckeditor" name="dosis"></textarea>
+                    <textarea class="form-control ckeditor" name="dosis"><?php echo $obat->dosis;?></textarea>
                   </div>
 
                 </div><!-- /.box-body -->
@@ -49,11 +49,11 @@
                 <div class="box-body">
                   <div class="form-group">
                     <label for="indikasi">Indikasi</label>
-                    <textarea class="form-control ckeditor" name="indikasi"></textarea>
+                    <textarea class="form-control ckeditor" name="indikasi"><?php echo $obat->indikasi;?></textarea>
                   </div>
                   <div class="form-group">
                     <label for="kontradiksi">Kontradiksi</label>
-                    <textarea class="form-control ckeditor" name="kontradiksi"></textarea>
+                    <textarea class="form-control ckeditor" name="kontradiksi"><?php echo $obat->kontradiksi;?></textarea>
                   </div>
                 </div><!-- /.box-body -->
                 <div class="box-footer">
@@ -70,18 +70,19 @@
                 <div class="box-body">
                   <div class="form-group">
                     <label for="efek_samping">Efek Samping</label>
-                    <textarea class="form-control ckeditor" name="efek_samping"></textarea>
+                    <textarea class="form-control ckeditor" name="efek_samping"><?php echo $obat->efek_samping;?></textarea>
                   </div>
                   <div class="form-group">
                     <label for="perhatian">Perhatian</label>
-                    <textarea class="form-control ckeditor" name="perhatian"></textarea>
+                    <textarea class="form-control ckeditor" name="perhatian"><?php echo $obat->perhatian;?></textarea>
                   </div>
                   <div class="form-group">
                     <label for="penggunaan">Penggunaan</label>
-                    <textarea class="form-control ckeditor" name="penggunaan"></textarea>
+                    <textarea class="form-control ckeditor" name="penggunaan"><?php echo $obat->penggunaan;?></textarea>
                   </div>
                 </div><!-- /.box-body -->
                 <div class="box-footer">
+                  <a class="btn btn-default" href="<?php echo base_url();?>kelola_obat">Batal</a>
                   <button type="submit" class="btn btn-primary">Simpan</button>
                 </div>
               </form>
