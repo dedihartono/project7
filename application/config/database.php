@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'dragonish-craft.000webhostapp.com', //sql12.freemysqlhosting.net
-	'username' => 'id3530766_root', //sql12198920
-	'password' => '123456', //MycZ39LHSc
-	'database' => 'id3530766_siobat', //sql12198920
+	'hostname' => 'sql12.freemysqlhosting.net', //sql12.freemysqlhosting.net
+	'username' => 'sql12203604', //sql12198920
+	'password' => 'm1hItiWyZJ', //MycZ39LHSc
+	'database' => 'sql12203604', //sql12198920
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
