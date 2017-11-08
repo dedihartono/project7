@@ -53,14 +53,14 @@ class M_login extends CI_Model {
 						$alert	= "<script>alert('Login Sebagai $jabatan[1]')</script>";
 						$this->session->set_flashdata("pesan", $alert);
 						redirect('dashboard');
-
-				} else {
+				}
+			} else {
 					$alert	= "<script>alert('Maaf! Username dan Password anda Salah')</script>";
 					$this->session->set_flashdata("pesan", $alert);
 					redirect('login');
 				}
-			}
 		}
+
 
 	public function check_session() {
 		$data = $this->session->userdata('logged_in');
