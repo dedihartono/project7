@@ -30,7 +30,7 @@ class M_login extends CI_Model {
 
 			foreach ($hasil->result() as $sess) {
 
-				$data['id_pengguna'] 	= $sess->id_pengguna;
+				$data['pengguna_id'] 	= $sess->pengguna_id;
 				$data['username'] 		= $sess->username;
 				$data['nama_lengkap'] = $sess->nama_lengkap;
 				$data['hak_akses'] 		= $sess->hak_akses;

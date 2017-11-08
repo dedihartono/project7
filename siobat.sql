@@ -1,22 +1,20 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
--- https://www.phpmyadmin.net/
+-- version 4.2.11
+-- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Nov 07, 2017 at 03:04 PM
--- Server version: 10.1.28-MariaDB
--- PHP Version: 7.1.10
+-- Host: 127.0.0.1
+-- Generation Time: Nov 08, 2017 at 02:27 PM
+-- Server version: 5.6.21
+-- PHP Version: 5.6.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- Database: `siobat`
@@ -28,8 +26,8 @@ SET time_zone = "+00:00";
 -- Table structure for table `m_obat`
 --
 
-CREATE TABLE `m_obat` (
-  `obat_id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `m_obat` (
+`obat_id` int(11) NOT NULL,
   `obat_nama` varchar(128) NOT NULL,
   `pengertian` text NOT NULL,
   `indikasi` text NOT NULL,
@@ -39,7 +37,7 @@ CREATE TABLE `m_obat` (
   `perhatian` text NOT NULL,
   `dosis` text NOT NULL,
   `kemasan` varchar(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `m_obat`
@@ -54,20 +52,20 @@ INSERT INTO `m_obat` (`obat_id`, `obat_nama`, `pengertian`, `indikasi`, `kontrad
 -- Table structure for table `m_pengguna`
 --
 
-CREATE TABLE `m_pengguna` (
-  `id_pengguna` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `m_pengguna` (
+`pengguna_id` int(11) NOT NULL,
   `nama_lengkap` varchar(64) NOT NULL,
   `username` varchar(64) NOT NULL,
   `password` varchar(32) NOT NULL,
   `hak_akses` varchar(1) NOT NULL,
   `gambar` varchar(64) DEFAULT 'default.png'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `m_pengguna`
 --
 
-INSERT INTO `m_pengguna` (`id_pengguna`, `nama_lengkap`, `username`, `password`, `hak_akses`, `gambar`) VALUES
+INSERT INTO `m_pengguna` (`pengguna_id`, `nama_lengkap`, `username`, `password`, `hak_akses`, `gambar`) VALUES
 (1, 'Admin', 'admin', '21232f297a57a5a743894a0e4a801fc3', '1', 'default.png');
 
 --
@@ -78,13 +76,13 @@ INSERT INTO `m_pengguna` (`id_pengguna`, `nama_lengkap`, `username`, `password`,
 -- Indexes for table `m_obat`
 --
 ALTER TABLE `m_obat`
-  ADD PRIMARY KEY (`obat_id`);
+ ADD PRIMARY KEY (`obat_id`);
 
 --
 -- Indexes for table `m_pengguna`
 --
 ALTER TABLE `m_pengguna`
-  ADD PRIMARY KEY (`id_pengguna`);
+ ADD PRIMARY KEY (`pengguna_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -94,15 +92,12 @@ ALTER TABLE `m_pengguna`
 -- AUTO_INCREMENT for table `m_obat`
 --
 ALTER TABLE `m_obat`
-  MODIFY `obat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
+MODIFY `obat_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `m_pengguna`
 --
 ALTER TABLE `m_pengguna`
-  MODIFY `id_pengguna` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-COMMIT;
-
+MODIFY `pengguna_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
