@@ -61,9 +61,4 @@ $route['translate_uri_dashes'] = TRUE;
 $route['api/example/users/(:num)'] = 'api/example/users/id/$1'; // Example 4
 $route['api/example/users/(:num)(\.)([a-zA-Z0-9_-]+)(.*)'] = 'api/example/users/id/$1/format/$3$4'; // Example 8
 
-
-$route['api/kategori']['get'] = 'api/kategori_obat/index';
-$route['api/kategori/(:num)']['get'] = 'api/kategori_obat/find/$1';
-$route['api/kategori']['post'] = 'api/kategori_obat/index';
-$route['api/kategori/(:num)']['put'] = 'api/kategori_obat/index/$1';
-$route['api/kategori/(:num)']['delete'] = 'api/kategori_obat/index/$1';
+$route['api/obat/(:num)'] = 'api/obat/'; // Example 4

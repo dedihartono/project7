@@ -8,7 +8,8 @@ class M_obat extends CI_Model {
 
 	public function create_data($data)
 	{
-		$this->db->insert($this->table, $data);
+		$status = $this->db->insert($this->table, $data);
+		return $status;
 	}
 
 	public function read_data()
