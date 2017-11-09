@@ -13,9 +13,6 @@
 
   <!-- Main content -->
   <section class="content">
-    <?php
-    $check  = $this->session->userdata();
-		var_dump($check); ?>
-
+    
   </section><!-- /.content -->
 </div><!-- /.content-wrapper -->
