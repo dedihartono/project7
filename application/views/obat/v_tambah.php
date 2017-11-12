@@ -32,8 +32,12 @@
                     <input type="text" class="form-control" name="kemasan" placeholder="Kemasan Obat">
                   </div>
                   <div class="form-group">
-                    <label for="dosis">Pengertian</label>
+                    <label for="pengertian">Pengertian</label>
                     <textarea class="form-control ckeditor" name="pengertian"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="komposisi">Komposisi</label>
+                    <textarea class="form-control ckeditor" name="komposisi"></textarea>
                   </div>
                 </div><!-- /.box-body -->
             </div><!-- /.box -->
@@ -59,7 +63,7 @@
                     <textarea class="form-control ckeditor" name="kontradiksi"></textarea>
                   </div>
                 </div><!-- /.box-body -->
-                
+
             </div><!-- /.box -->
           </div><!--/.col (left) -->
           <div class="col-md-4">

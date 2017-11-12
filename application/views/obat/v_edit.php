@@ -35,6 +35,10 @@
                     <label for="dosis">Pengertian</label>
                     <textarea class="form-control ckeditor" name="pengertian"><?php echo $obat->pengertian;?></textarea>
                   </div>
+                  <div class="form-group">
+                    <label for="komposisi">Komposisi</label>
+                    <textarea class="form-control ckeditor" name="komposisi"><?php echo $obat->komposisi;?></textarea>
+                  </div>
                 </div><!-- /.box-body -->
             </div><!-- /.box -->
           </div><!--/.col (left) -->
@@ -58,6 +62,7 @@
                     <label for="kontradiksi">Kontradiksi</label>
                     <textarea class="form-control ckeditor" name="kontradiksi"><?php echo $obat->kontradiksi;?></textarea>
                   </div>
+
                 </div><!-- /.box-body -->
             </div><!-- /.box -->
           </div><!--/.col (left) -->

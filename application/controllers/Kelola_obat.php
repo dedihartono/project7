@@ -51,6 +51,7 @@ class Kelola_obat extends CI_Controller {
 			'perhatian'			=> $this->input->post('perhatian'),
 			'dosis'					=> $this->input->post('dosis'),
 			'kemasan'				=> $this->input->post('kemasan'),
+			'komposisi'			=> $this->input->post('komposisi'),
 		];
 		$this->m_obat->create_data($data);
 		$alert	= "<script>alert('Data Berhasil Disimpan!')</script>";
@@ -100,6 +101,7 @@ class Kelola_obat extends CI_Controller {
 			'perhatian'			=> $this->input->post('perhatian'),
 			'dosis'					=> $this->input->post('dosis'),
 			'kemasan'				=> $this->input->post('kemasan'),
+			'komposisi'			=> $this->input->post('komposisi'),
 		];
 		$id = $this->uri->segment('3');
 		$this->m_obat->update_data($id, $data);

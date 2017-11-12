@@ -27,9 +27,13 @@
             <?php echo $obat->kemasan;?>
           </p>
           <p><strong><?php echo $obat->obat_nama;?></strong></p>
-          <p>
-            <?php echo $obat->pengertian;?>
-          </p>
+      </div>
+      <div class="col-md-6">
+        <?php echo $obat->pengertian;?>
+      </div>
+      <div class="col-md-6">
+        <strong>Komposisi</strong><br>
+        <?php echo $obat->komposisi;?>
       </div>
     </div>
     <hr>
@@ -48,9 +52,10 @@
       </div><!-- /.col -->
       <div class="col-sm-4 invoice-col">
         <p>
-          <strong>Efek Samping</strong><br>
-          <?php echo $obat->efek_samping;?>
+          <strong>Kontradiksi</strong><br>
+          <?php echo $obat->kontradiksi;?>
         </p>
+
       </div>
       <!-- /.col -->
     </div><!-- /.row -->
@@ -58,20 +63,20 @@
     <div class="row invoice-info">
       <div class="col-sm-4 invoice-col">
         <p>
-          <strong>Penggunaan</strong><br>
-          <?php echo $obat->penggunaan;?>
-        </p>
-      </div><!-- /.col -->
-      <div class="col-sm-4 invoice-col">
-        <p>
-          <strong>Dosis</strong><br>
-          <?php echo $obat->indikasi;?>
-        </p>
-      </div><!-- /.col -->
-      <div class="col-sm-4 invoice-col">
-        <p>
           <strong>Efek Samping</strong><br>
           <?php echo $obat->efek_samping;?>
+        </p>
+      </div><!-- /.col -->
+      <div class="col-sm-4 invoice-col">
+        <p>
+          <strong>Perhatian</strong><br>
+          <?php echo $obat->perhatian;?>
+        </p>
+      </div><!-- /.col -->
+      <div class="col-sm-4 invoice-col">
+        <p>
+          <strong>Penggunaan</strong><br>
+          <?php echo $obat->penggunaan;?>
         </p>
       </div>
       <!-- /.col -->

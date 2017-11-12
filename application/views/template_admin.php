@@ -166,6 +166,26 @@
           language:"id",
       });
 
+        $(function () {
+          $("#table").DataTable({
+            "language": {
+              "url": "<?php echo base_url('assets/plugins/datatables/lang/indonesia_lang.json')?>"
+            },
+            "paging": true,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "columnDefs": [
+  		        {
+  		            "targets": [ 3 ], //first and four column / numbering column
+  		            "orderable": false, //set not orderable
+  		        },
+	          ],
+          });
+        });
+
       function hapus() {
 
         var conf=confirm("Apakah data ini ingin dihapus ?");
