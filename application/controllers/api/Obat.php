@@ -22,16 +22,10 @@ class Obat extends REST_Controller {
          $obat = $this->db->get('m_obat')->result_array();
      }
      if ($obat) {
-       $this->response([
-         'status' => TRUE,
-         'data' => $obat,
-       ],
+       $this->response([ $obat ],
          REST_Controller::HTTP_OK);
      } else {
-       $this->response([
-           'status' => FALSE,
-           'message' => 'Tidak Ada Data Obat Tersedia'
-       ], REST_Controller::HTTP_NOT_FOUND);
+       $this->response([ 'Tidak Ada Data Obat Tersedia' ], REST_Controller::HTTP_NOT_FOUND);
      }
   }
 
