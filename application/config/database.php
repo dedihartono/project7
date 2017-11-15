@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'sql109.byethost33.com', //sql12.freemysqlhosting.net
-	'username' => 'b33_21043141', //sql12203604
-	'password' => 'google123A', //m1hItiWyZJ
-	'database' => 'b33_21043141_siobat', //sql12203604
+	'hostname' => 'sql12.freemysqlhosting.net', //sql12.freemysqlhosting.net
+	'username' => 'sql12205228', //sql12203604
+	'password' => 'gESkanZYLD', //m1hItiWyZJ
+	'database' => 'sql12205228', //sql12203604
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
