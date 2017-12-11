@@ -39,6 +39,10 @@
                     <label for="komposisi">Komposisi</label>
                     <textarea class="form-control ckeditor" name="komposisi"></textarea>
                   </div>
+                  <div class="form-group">
+                    <label for="komposisi">Lokasi Apotek</label>
+                    <textarea class="form-control ckeditor" name="apotek_nama"></textarea>
+                  </div>
                 </div><!-- /.box-body -->
             </div><!-- /.box -->
           </div><!--/.col (left) -->

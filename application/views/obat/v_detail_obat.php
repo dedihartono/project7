@@ -79,6 +79,12 @@
           <?php echo $obat->penggunaan;?>
         </p>
       </div>
+      <div class="col-sm-4 invoice-col">
+        <p>
+          <strong>Lokasi Apotek Tersedia</strong><br>
+          <?php echo $obat->apotek_nama;?>
+        </p>
+      </div>
       <!-- /.col -->
     </div><!-- /.row -->
     <!-- this row will not appear when printing -->
